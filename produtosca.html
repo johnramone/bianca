@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bia Modas | Administração</title>
+        <!-- BOOTSTRAP STYLES-->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+
+        <!-- FONTAWESOME STYLES-->
+        <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+            <!-- MORRIS CHART STYLES-->
+            <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+            <!-- CUSTOM STYLES-->
+            <link href="assets/css/custom.css" rel="stylesheet" />
+            <!-- GOOGLE FONTS-->
+            <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+            <!-- DONUT CHART  -->
+
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Administrador</a> 
+                </div>
+                <div style="color: white;
+                     padding: 15px 50px 5px 50px;
+                     float: right;
+                     font-size: 16px;"> Ultimo acesso : 12/02/2016 14:15 &nbsp; <a href="logout.html" class="btn btn-danger square-btn-adjust">Logout</a>
+                    <a href="venda.html" class="btn btn-info square-btn-adjust">Ver carrinho</a> 
+                </div>
+            </nav>      
+            <!-- /. NAV TOP  -->
+            <nav class="navbar-default navbar-side" role="navigation">
+                <div class="sidebar-collapse">
+                    <ul class="nav" id="main-menu">
+                        <li class="text-center">
+                            <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+                        </li>
+
+
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-2x"></i> Inicial</a>
+                        </li>
+                        <li>
+                            <a class="active-menu" href="#"><i class="fa fa-shopping-basket fa-2x"></i> Produtos<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="produtosca.html">Cadastrar</a>
+                                </li>
+                                <li>
+                                    <a href="produtosco.html">Consultar</a>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li>
+                            <a  href="caixa.html"><i class="fa fa-money fa-2x"></i> Caixa</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart fa-2x"></i> Contas<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="contasa.html">A pagar</a>
+                                </li>
+                                <li>
+                                    <a href="contasp.html">Pagas</a>
+                                </li>
+                                <li>
+                                    <a href="contasn.html">Nova conta</a>
+                                </li>
+                            </ul>
+                        </li> 	
+                        <li>
+                            <a href="#"><i class="fa fa-cart-plus fa-2x"></i> Vendas<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="novavenda.html">Iniciar Venda</a>
+                                </li>
+                                <li>
+                                    <a href="venda.html">Venda atual</a>
+                                </li>
+                                <li>
+                                    <a href="vendas.html">Vendas Efetuadas</a>
+                                </li>
+                            </ul>
+                        </li> 		
+                    </ul>
+
+                </div>
+
+            </nav>  
+            <!-- /. NAV SIDE  -->
+            <div id="page-wrapper" >
+                <div id="page-inner">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Cadastro de Produtos</h2>   
+
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label>Tipo do Produto</label>
+                                <input type="text" class="form-control" id="userIdType"  list = "lst_userIdTypes"> 
+                                    <datalist id="lst_userIdTypes">
+                                        <option>Calça</option>
+                                        <option>Tenis</option>
+                                        <option>Camisa</option>
+                                        <option>Blusa</option>
+                                        <option>Boné</option>
+                                    </datalist>
+
+                            </div> <div class="form-group">
+                                <label>Nome</label>
+                                <input class="form-control" />
+                                
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                         <div class="form-group">
+                                <label>Valor</label>
+                                <input class="form-control" />
+
+                            </div>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                         <div class="form-group">
+                                <label>Quantidade</label>
+                                <input class="form-control" />
+
+                            </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="form-group">
+                                <label class="control-label">Foto</label>
+
+
+                                <form enctype="multipart/form-data">
+                                    <input class="file" type="file" multiple data-min-file-count="1">
+                                        <br>
+                                            <button type="submit" class="btn btn-primary">Enviar</button>
+                                             </form>
+
+                                            </div>
+                                            </div>
+                                            <div class="col-md-2"></div>
+                                            </div>
+                                            </div>
+                                            <!-- /. PAGE INNER  -->
+                                            </div>
+                                            <!-- /. PAGE WRAPPER  -->
+                                            </div>
+                                            <!-- /. WRAPPER  -->
+                                            <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+                                            <!-- JQUERY SCRIPTS -->
+                                            <script src="assets/js/jquery-1.10.2.js"></script>
+                                            <!-- BOOTSTRAP SCRIPTS -->
+                                            <script src="assets/js/bootstrap.min.js"></script>
+                                            <!-- METISMENU SCRIPTS -->
+                                            <script src="assets/js/jquery.metisMenu.js"></script>
+                                            <!-- MORRIS CHART SCRIPTS -->
+                                            <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+                                            <script src="assets/js/morris/morris.js"></script>
+                                            <!-- CUSTOM SCRIPTS -->
+                                            <script src="assets/js/custom.js"></script>
+
+                                            <script>
+                                                Morris.Donut({
+                                                    element: 'donut-example',
+                                                    data: [
+                                                        {label: "Camisa", value: 15},
+                                                        {label: "Tenis", value: 5},
+                                                        {label: "Calça", value: 12},
+                                                        {label: "Boné", value: 7},
+                                                    ]
+                                                });
+
+                                                Morris.Line({
+                                                    element: 'line-example',
+                                                    data: [
+                                                        {y: '2012-02', a: 150, b: 90},
+                                                        {y: '2012-03', a: 75, b: 65},
+                                                        {y: '2012-04', a: 50, b: 40},
+                                                        {y: '2012-05', a: 75, b: 65},
+                                                        {y: '2012-06', a: 50, b: 40},
+                                                        {y: '2012-07', a: 75, b: 65},
+                                                        {y: '2012-08', a: 100, b: 90}
+                                                    ],
+                                                    xkey: 'y',
+                                                    ykeys: ['a', 'b'],
+                                                    labels: ['Caixa', 'Contas']
+                                                });
+
+                                            
+                                            </script>
+
+                                            </body>
+                                            </html>
